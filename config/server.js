@@ -1,10 +1,10 @@
 module.exports={
   local:{
-    open:false,
-    port:3001
+    open:true,
+    port:3000
   },
   http:{
-    open:true,
+    open:false,
     port:80
   },
   https:{

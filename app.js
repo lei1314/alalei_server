@@ -96,7 +96,7 @@ app.use(function(err, req, res, next) {
   }else if(req.url.includes('/admin')){// 管理端接口不存在 返回  res.render('error.ejs')
     res.render('error');
   }else{ // 资源托管没有对应的页面 返回 404.html
-    res.sendFile(path.join(__dirname,'public','template','404.html'))
+    res.sendFile(path.join(__dirname,'public','template','index.html'))
   }
   
 });

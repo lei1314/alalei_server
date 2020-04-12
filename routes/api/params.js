@@ -40,7 +40,30 @@ module.exports = (req, res, next) => {
         msg: 'token过期或者未登录' + message
       })
     )
-
   }
+
+
+
+ //  if (/detail/.test(req.url)) {//登录、注册、注销、无需token
+ //    //token校验
+ //    //1. 获取token
+ //    let token = req.headers.token || req.body.token || req.query.token;
+    
+ //    //2.校验token
+ //    jwt.verify(token).then(
+ //      decode => {
+ //        req.query.decode = decode;
+ //        next()
+ //      }
+ //    ).catch(
+ //      message => res.send({
+ //        err: 2,
+ //        msg: 'token过期或者未登录' + message
+ //      })
+ //    )
+ //  } else {//自动登录，商品列表、详情需要token
+    
+	// next()
+ //  }
 
 }
